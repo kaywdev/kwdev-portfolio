@@ -178,7 +178,6 @@
                         
                         a{
                             display:block;
-                            text-align: center;
                             #{$link-hover-selector}{
                                 cursor: pointer;
                             }
@@ -550,8 +549,8 @@
                 line-height: 1.2;
                 #{$link-hover-selector}{
                     cursor: pointer;
-                    border-bottom: 2px solid $color__bodyfont;
-                    font-weight: 550;
+                    border-bottom: none;
+                    color:$color__pink;
                 }
                 span.nav-subtitle{
                     font-size:0.75rem;
