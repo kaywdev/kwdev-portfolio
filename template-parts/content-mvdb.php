@@ -119,11 +119,11 @@
 				<?php if($design_image_id_1): echo wp_get_attachment_image($design_image_id_1, 'large', '', array('class'=>'project-img')); endif; ?>	
 			</div><!-- .tg-second-img -->
 			
-			<div class="design-img-wrapper col-2" data-aos="fade-up">
+			<div class="design-img-wrapper col-2-fr md-col-2" data-aos="fade-up">
 				<div class="design-text-wrapper"><?php if($design_text_3): echo $design_text_3; endif; ?></div>
 				<div class="d-img3"><?php if($design_image_id_2): echo wp_get_attachment_image($design_image_id_2, 'large', '', array('class'=>'project-img'));endif; ?></div>
 			</div><!-- .tg-third-img -->
-			<div class="design-img-wrapper md-third-img" data-aos="fade-up">
+			<div class="design-img-wrapper md-design-section4 col-2-fr md-col-2" data-aos="fade-up">
 				<div class="design-text-wrapper"><?php if($design_text_4): echo $design_text_4; endif; ?></div>
 				<div class="d-img3"><?php if($design_image_id_3): echo wp_get_attachment_image($design_image_id_3, 'large', '', array('class'=>'project-img'));endif; ?></div>
 			</div><!-- .tg-third-img -->
@@ -164,16 +164,16 @@
 		?>
 		<div class="dev-wrapper">
 			
-			<div class="dev-inner-wrapper tg-dev1 md-dev1" data-aos="fade-up">
-				<div class="design-text-wrapper"><?php if($dev_text_1): echo $dev_text_1; endif; ?></div>
+			<div class="dev-inner-wrapper dev-col2 md-dev1" data-aos="fade-up">
+				<div class="dev-text-wrapper"><?php if($dev_text_1): echo $dev_text_1; endif; ?></div>
 				<div class="dev-movie">
 					<video width="100%" height="100%" controls preload="metadata">
 					<source src="<?php echo get_template_directory_uri(); ?>/media/mvdb/mvdb-movie1.mov#t=0.1" type="video/mp4" alt="lunette code demo movie">
 					</video>
 				</div><!-- .dev-movie -->
 			</div><!-- .tg-dev1 -->
-			<div class="dev-inner-wrapper md-dev2" data-aos="fade-up">
-				<div class="design-text-wrapper"><?php if($dev_text_2): echo $dev_text_2; endif; ?></div>
+			<div class="dev-inner-wrapper dev-col2 md-dev2" data-aos="fade-up">
+				<div class="dev-text-wrapper"><?php if($dev_text_2): echo $dev_text_2; endif; ?></div>
 				<div class="dev-movie">
 					<video width="100%" height="100%" controls preload="metadata">
 					<source src="<?php echo get_template_directory_uri(); ?>/media/mvdb/mvdb-movie2.mov#t=0.1" type="video/mp4" alt="lunette code demo movie">

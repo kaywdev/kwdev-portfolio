@@ -26,8 +26,6 @@
                 @media (orientation: landscape) {
                     min-height: 28rem;
                   }
-
-
                 @include mq($mq500){
                     min-height: 55vh;
                 }
@@ -102,6 +100,9 @@
         .dev-wrapper{
             .dev-img-wrap{
                 text-align:center;
+                @include mq($mq600){
+                    padding:0 3rem;
+                }
             }
             .ws-dev1{
                 h3{

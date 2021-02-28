@@ -11,6 +11,15 @@
     }
     .entry-content{
         .design-wrapper{
+            .md-col-2{
+                padding:0 2rem;
+                @include mq($mq600){
+                    padding:0 3rem;
+                }
+                p{
+                    padding: 0;
+                }    
+            }
             @include mq($mq600){
                 .md-second-img.aos-init.aos-animate {
                     text-align: center;
@@ -28,17 +37,15 @@
                 }
             }
             @include mq($mq670){
-                .design-img-wrapper.md-third-img {
-                    padding: 0 3rem;
-                    display: inline-flex;
-                    align-items: center;
-                    p,.d-img3{
-                        width:50%;
+                .md-design-section4{
+                    >.design-text-wrapper{
+                        grid-column:2;
+                        grid-row: 1; 
+                        margin-left:1rem;
                     }
-                }
-                div{
-                    &:nth-of-type(4){
-                        flex-direction: row-reverse;
+                    >.d-img3{
+                        grid-column:1;
+                        grid-row: 1;
                     }
                 }
             }
@@ -49,11 +56,6 @@
             padding-top: 2rem;
             .dev-inner-wrapper{
                 padding-bottom: 2rem;
-                p{
-                    @include mq($mq600){
-                        padding: 0 3rem;
-                    }  
-                }
             }
             .dev-movie{
                 @include mq($mq600){
@@ -68,16 +70,15 @@
                 margin: 0 auto;
                 padding-top:2rem;
                 .dev-inner-wrapper {
-                    display: inline-grid;
-                    grid-template-columns: 1fr 1fr;
-                    align-items: center;
-
+                   p{
+                       padding:0;
+                   }
                     .dev-movie{
                         padding:0;
                     }
                 }
                 .md-dev2{
-                    p{
+                    .dev-text-wrapper{
                         order:2;
                     }
                     .dev-movie{

@@ -1,0 +1,29 @@
+// design col-2(%) mq($mq670)
+.col-2{
+    @include mq($mq670){
+        display: inline-grid;
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 1rem;
+        justify-content: center;
+    }
+}
+// design col-2(1fr) mq($mq670)
+.col-2-fr{
+    @include mq($mq670){
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.dev-col2{
+    @include mq($mq1024){
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    }
+}
