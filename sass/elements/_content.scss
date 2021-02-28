@@ -17,7 +17,8 @@
         align-items: center;
     }
 }
-
+//col-2(1fr) mq($mq1024)
+.col-2-fr-dt,
 .dev-col2{
     @include mq($mq1024){
     display: inline-grid;
@@ -26,4 +27,9 @@
     align-items: center;
     justify-content: center;
     }
+}
+
+.teammate-link a{
+    margin-left: -1.2rem;
+    color:$color__background-body !important;
 }

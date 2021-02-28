@@ -53,7 +53,7 @@
 						?>
 					</div> <!--end of task-wrapper-->
 				</div><!--end of .tool-wrapper-->
-					<div class="team-wrapper">
+					<div class="team-wrapper teammate-link">
 						<h3>Development Team</h3>
 						<?php if(get_field('team')):
 							the_field('team');
@@ -127,7 +127,7 @@
 			</div><!-- .color-theme -->
 
 			<div class="design-text-wrapper" data-aos="fade-up"><?php if($design_text_2): echo $design_text_2; endif; ?></div>
-			<div class="design-section2" data-aos="fade-up">
+			<div class="design-section2 col-2-fr-dt" data-aos="fade-up">
 				<div class="design-text-wrapper" data-aos="fade-up"><?php if($design_text_2): echo $design_text_3; endif; ?></div>
 				<div class="design-img-wrapper" data-aos="fade-up">
 					<?php if($design_image_id_2): echo wp_get_attachment_image($design_image_id_2, 'full', '', array('class'=>'project-img'));endif; ?>
@@ -162,21 +162,21 @@
 		<div class="dev-wrapper">
 			<div class="dev-text-wrapper" data-aos="fade-up"><?php if($dev_text_1): echo $dev_text_1; endif; ?></div>
 				<div class="dev-section1" data-aos="fade-up">	
-					<div class="dev-inner-wrapper dev-col-2">		
+					<div class="dev-inner-wrapper col-2-fr">		
 						<div class="dev-img-wrapper"><?php if($dev_image_id_1): echo wp_get_attachment_image($dev_image_id_1, 'large', '', array('class'=>'dev-img'));endif; ?></div>
 						<div class="dev-img-wrapper"><?php if($dev_image_id_2): echo wp_get_attachment_image($dev_image_id_2, 'large', '', array('class'=>'dev-img'));endif; ?></div>
 					</div>
 				</div>
 			<div class="dev-section2 dev-movie" data-aos="fade-up">
-					<video width="100%" height="100%" autoplay loop muted playsinline preload="metadata">
+					<video class="dev-img-wrapper" width="100%" height="100%" autoplay loop muted playsinline preload="metadata">
 					<source src="<?php echo get_template_directory_uri(); ?>/media/parley/parley-dev-anime.mp4" type="video/mp4" alt="parley-scroll demo">
 					</video>
 			</div><!-- .dev-movie -->
-			<div class="dev-section3 dev-col-2-dt">
+			<div class="dev-section3 dev-col2">
 				<div class="dev-text-wrapper" data-aos="fade-up"><?php if($dev_text_2): echo $dev_text_2; endif; ?></div>	
 				<div class="dev-inner-wrapper">	
 					<div class="dev-movie" data-aos="fade-up">
-					<video width="100%" height="100%" autoplay loop muted playsinline preload="metadata">
+					<video class="dev-img-wrapper" width="100%" height="100%" autoplay loop muted playsinline preload="metadata">
 					<source src="<?php echo get_template_directory_uri(); ?>/media/parley/parley-dev2-slide.mp4" type="video/mp4" alt="parley-slide demo">
 					</video>
 					</div><!-- .dev-movie -->

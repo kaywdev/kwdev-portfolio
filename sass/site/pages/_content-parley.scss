@@ -1,0 +1,52 @@
+#post-264{
+    .entry-content{
+        .design-wrapper{
+            .design-section2{
+                >.design-text-wrapper{
+                    @include mq($mq600){  
+                        p{
+                            padding:0;
+                        }
+                        ul{
+                            margin-left: -1.2rem;
+                        }
+                    }
+                }
+                >.design-img-wrapper img{
+                    width:100%;
+                }
+                @include mq($mq600){
+                    padding: 0 3rem;
+                }
+            }
+        }
+        .dev-wrapper{
+            .dev-img-wrapper{
+                padding-bottom:2rem;
+            }
+            .dev-section3{
+                >.dev-text-wrapper{
+                    padding-bottom:2rem;
+                }
+            }
+            @include mq($mq600){
+                padding:0 3rem;
+                 p{
+                    padding:0 0 1rem;
+                }
+                .dev-section1{
+                    padding-bottom:2rem;
+                    >.col-2-fr{
+                        align-items: inherit;
+                        .dev-img-wrapper img{
+                            padding: 0;
+                        }
+                    }
+                }
+                .dev-section2{
+                    //padding-bottom:2rem;
+                }
+            }
+        }
+    }
+}

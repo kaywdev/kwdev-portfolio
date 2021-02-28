@@ -297,7 +297,7 @@
                     }
                 }
                 
-                //General p
+                //General font size adjustment for dt(p, li)
                 p{
                     padding: 0 2rem;
                     @include mq ($mq670){
@@ -305,6 +305,15 @@
                     }
                     @include mq($mq1024){
                         font-size: 1.3rem;
+                    }
+                }
+                ul{
+                    margin-left: 0.8rem;
+                    padding-right: 2rem;
+                    li{
+                        @include mq($mq1024){
+                            font-size: 1.3rem;
+                        }  
                     }
                 }
                 //design content
