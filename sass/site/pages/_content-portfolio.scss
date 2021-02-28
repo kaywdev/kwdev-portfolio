@@ -1,0 +1,37 @@
+#post-213{
+    .entry-content{
+        .design-wrapper{
+            .design-img-wrapper.hl-second-img.pf-second-img{
+               .d-img2{
+                  img{
+                      width:100%;
+                  } 
+               } 
+            } 
+        }
+        .dev-wrapper{
+            p{
+                @include mq($mq600){
+                    padding: 0 3rem;
+                }
+            }
+            .pf-dev1{ 
+                .dev-inner-wrapper {
+                    .dev-img-wrap{
+                        @include mq($mq600){
+                            padding: 0 3rem;
+                        }
+                        @include mq($mq670){
+                            padding: 0;
+                        }
+                    }
+                    @include mq($mq1024){
+                    display: inline-grid;
+                    grid-template-columns: 1fr 1fr;
+                    justify-content: center;
+                    }
+                }    
+            }
+        }
+    }
+}

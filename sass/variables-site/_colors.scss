@@ -1,0 +1,58 @@
+// Brand color 
+$color__bodyfont: #282C34;
+$color__navy: #0A4D75;
+$color__pink: rgb(251, 92, 95);
+$color__coolgray: #CDD6DB;
+$color__coolgray-lighten: rgba(205, 214, 219, 0.5);
+
+//typing color
+$color__typing-orange: #D19A66;
+$color__typing-purple: #C678DD;
+$color__typing-green:  #56B6C2;
+$color__typing-blue: #519ABA;
+$color__typing-red: #E06C75;
+$color__typing-grey:#ABB2BF;
+
+
+$color__background-body: #F4F7ED;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: #282C34; 
+$color__link-visited:#282C34; 
+$color__link-hover: #282C34;
+$color__text-main: #282C34;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+
+//Gradient-colors
+/* COLOR VARIABLES
+============================================= */
+
+$pink-dark:#d100ae;
+$pink:rgb(251, 81, 166); 
+$orange:rgb(254, 118, 68);
+$grd-black:#00100B;
+$grd-navy:#0A527E;
+$ln-pink: rgb(255,176,148);
+$ln-light-purple: rgba(184,130,218,1);
+$ln-purple:rgba(145,105,255,0.1);
+$ln-pink2:rgba(251,39,184,1);
+$ln-orange:rgba(255,165,63,1);
+
+/* GRADIENT LISTS
+============================================= */
+$grad-pink: $pink 0%, $orange 100%;
+$grad-navy: $grd-black 0%, $grd-navy 100%;
+$ln-list1: rgba($ln-pink,0.5) 0%, rgba($ln-light-purple, 0.5) 54%, rgba($ln-purple,0.5) 100%;
+$ln-list2: $ln-pink2 0%, $ln-orange 100%;

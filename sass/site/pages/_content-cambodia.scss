@@ -1,0 +1,39 @@
+#post-74{
+    .entry-header{
+        .header-wrap{
+            .header-top-image{
+               
+                @include mq($mq670){
+                    background-position: 45% center;
+                }
+            }
+        }
+    }
+    .entry-content{
+        .design-wrapper{
+            @include mq($mq600){
+                .design-img-wrapper.cc-second-img,
+                .design-img-wrapper.cc-third-img{
+                    img{
+                        width:100%;
+                    }
+                }
+            }
+        }
+        .dev-wrapper{
+            .dev-inner-wrapper.cc-dev1 {
+                padding-bottom: 2rem;
+            }
+            .dev-movie{
+                @include mq($mq670){
+                    padding: 0 3rem;
+                    text-align: center;
+                    video {
+                        max-width: 800px;
+                    }
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,83 @@
+#post-53{
+    .entry-header{
+        .header-wrap{
+            .header-top-image{
+                background-position: center center;
+                @include mq($mq670){
+                    background-position: 27% center;
+                }
+                @include mq($mq1024){
+                    background-position: center center;
+                }
+            }
+        }
+    }
+    .entry-content{
+
+        .design-wrapper{
+           
+            .tg-typography{
+                img{
+                    padding-bottom: 2rem;
+                }
+            }
+            @include mq($mq600){
+                .design-img-wrapper.tg-second-img,
+                .design-img-wrapper.tg-third-img{
+                    text-align: center;
+                    padding: 0 3rem;
+                    img{
+                        width:100%;
+                    }
+                }
+                .tg-typography{
+                    padding: 0 3rem;
+                    p{
+                        padding:0;
+                    }
+                }
+
+            }
+            
+         
+            @include mq($mq670){
+                .design-img-wrapper.tg-third-img{
+                    display: inline-grid;
+                    grid-template-columns: 50% 50%;
+                    grid-column-gap: 1rem;
+                    justify-content: center;
+                }
+                .tg-typography{
+                    display: grid;
+                     grid-template-columns: 50% 50%;
+                    grid-column-gap: 1rem;
+                    justify-content: center;
+                    p{
+                    padding-right: 0;
+                    padding-left: 1rem;
+                    align-self: center;
+                    }
+                }
+            }
+        }
+        .dev-wrapper{
+            .dev-movie{
+            padding: 2rem 0;
+                @include mq($mq600){
+                    padding: 2rem 3rem;
+                }
+            }
+        }
+        @include mq($mq1024){
+            .dev-wrapper{    
+                .dev-inner-wrapper.tg-dev1 {
+                    width: 84.157%;
+                    margin: 0 auto;
+                }
+            }
+        }
+       
+        
+    }
+}
+

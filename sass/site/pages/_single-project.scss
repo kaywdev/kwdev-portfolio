@@ -1,0 +1,665 @@
+.single-kd-project{
+   .site{
+    .site-header{
+        .header-wrapper{
+            .main-navigation{
+                .menu-wrapper{
+                    .menu-toggle{
+                         color:$color__background-body;
+                        z-index:1;
+                        .line{
+                            background:$color__background-body;
+                        }
+                    }
+                    
+                    @include mq($mq600){
+                        p{
+                            color:$color__background-body;
+                            z-index: 1;
+                        }
+                    }
+                }
+                .toggled-nav-wrapper{
+                    .menu-menu-1-container{
+                        @include mq($mq600){
+                            ul#primary-menu{
+                                li#menu-item-15,
+                                li#menu-item-78,
+                                li#menu-item-191{
+                                    display:none;
+                                } 
+                            } 
+                        } 
+                    }
+                }
+            }
+            .main-navigation.toggled{
+                .toggled-nav-wrapper{
+                    .menu-menu-1-container{
+                        @include mq($mq600){
+                            ul#primary-menu{
+                                li#menu-item-15,
+                                li#menu-item-78,
+                                li#menu-item-191{
+                                    display:block;
+                                } 
+                            } 
+                        } 
+                    }
+                }
+            }
+            a.project-link{
+                .project-icon{
+                    .p-icon{
+                      filter: invert(94%) sepia(10%) saturate(512%) hue-rotate(326deg) brightness(110%) contrast(94%);
+                    }
+                    @include mq($mq600){
+                        p{
+                            color:$color__background-body;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    .site-main{
+        article.kd-project{
+            .entry-header{
+                .header-wrap{
+                    margin-top:-8rem;
+                    width: 100%;
+                    .header-top-image {
+                        height: 27rem;
+                        background-position: right center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width:100%;
+                        display: inline-flex;
+                        position: relative;
+                        align-items: flex-end;
+
+                        &:before{
+                            position:absolute;
+                            top:0;
+                            left:0;
+                            content:"";
+                            width:100%;
+                            height: 27rem;
+                            background-color: rgba(11, 11, 11, 0.45);
+                        }
+
+                        h1.entry-title{
+                            font-size:3rem;
+                            align-self: end;
+                            color:#fff;
+                            z-index: 1;
+                            padding-left: 1rem;
+                            position: relative;
+                            line-height: 1;
+                            padding-bottom:0.8rem;
+                            &:after{
+                                content: "";
+                                width: 5rem;
+                                height: 5px;
+                                background-color:$color__pink;
+                                position: absolute;
+                                bottom: 0;
+                                left: 1rem;
+                            }
+                        }
+                        @include mq($mq600){
+                            padding: 0 2rem;
+                        }
+                        @include mq($mq1024){
+                            .header-title{
+                                margin-left:auto;
+                                width:46rem;
+                                transform: translateY(15rem);
+
+                                @include mq($mq1920){
+                                    width:53rem;
+                                }
+                                .entry-title{
+                                    font-size:5.5rem;
+                                    @include mq ($mq1400){
+                                        padding:0;
+                                        &:after{
+                                            left:0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        
+                    }
+                    .summary-text-wrapper{
+                        background-color: $color__bodyfont;
+                        color:$color__background-body;
+                        padding: 0 1rem 2rem;
+                        .summary-text-inner-wrapper{
+                            
+                            div{
+                                &:last-of-type{
+                                padding-bottom: 2rem; 
+                                }
+                            }
+                            
+                        
+                        h3{
+                            margin: 0;
+                            font-size: 1.75rem;
+                            font-family:$font__main;
+                            padding-top: 1rem;
+                            color:$color__typing-blue;
+
+                        }
+                        .tool-wrapper {
+                            width: 100%;
+                            display: inline-grid;
+                            grid-template-columns: 1fr 1fr;
+                            padding-bottom: 1rem;
+                        }
+                        .techtool-wrapper,
+                        .task-wrapper,
+                        .team-wrapper{
+                            h3{
+                                font-size: 1.3rem;
+                                padding: 0;
+                            }
+                            ul{
+                                list-style: none;
+                                margin:0;
+                                padding:0;
+                            }
+                        }
+                        
+                        
+                        a{
+                            display:block;
+                            text-align: center;
+                            #{$link-hover-selector}{
+                                cursor: pointer;
+                            }
+                            .cta-btn.live {
+                                @include btn-style();
+                                max-width: 200px;
+                                @include gradient(180deg, $grad-pink);
+                                box-sizing: border-box;
+                                
+                                #{$link-hover-selector}{
+                                    cursor: pointer; 
+                                    background: $color__background-body;
+                                    color:$color__pink;
+                                    font-weight: 600;
+                                    box-shadow: inset 0 0 0 3px $color__pink;
+                                }
+                            }
+                        }
+                        
+                        } 
+                        @include mq($mq600){
+                            padding: 0 3rem 2rem;
+                        }
+                    }
+                    @include mq($mq670){
+                        display:inline-grid;
+                        grid-template-columns: 60% 1fr;
+                        min-height: 100vh;
+                        .header-top-image{
+                            height: 100%;
+                            background-position: 55% center;
+                            align-items: center;
+                            &:before{
+                                height: 100%; 
+                            }
+                            h1.entry-title{
+                                font-size: 3.5rem;
+                                align-self: center;
+                                margin-left: 3rem;
+                            }
+                        }
+                        .summary-text-wrapper{
+                            padding: 8rem 3rem 6rem 2rem;
+                            .summary-text-inner-wrapper{
+                                height: 100%;
+                                display:inline-flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                
+                            }
+                        }
+                    }
+                    @include mq($mq1024){
+                        .header-top-image {
+                            h1.entry-title{
+                                padding-bottom: 1.2rem;
+                            }   
+                        }
+                        .summary-text-wrapper{
+                            .summary-text-inner-wrapper{
+                                max-width: 25rem;
+                                padding-left: 2rem;
+                                p{
+                                    font-size: 1.25rem;
+                                }
+                                ul{
+                                    li{
+                                        font-size: 1.25rem;  
+                                    }
+                                }
+                            }
+                        }
+                    } 
+                }
+            }
+            .entry-content{
+               
+                //title styling
+                .content-title{
+                    text-align: center;
+                    h2{
+                        font-size: 2.2rem;
+                        position: relative;
+                        display: inline-block; 
+                        margin: 2rem auto;
+                        &:before,
+                        &:after{
+                            content: "";
+                            display: inline-block;
+                            position: absolute;
+                            width: 3rem;
+                            height: 1px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            background-color: #282C34;
+                        }
+                        &:before{
+                            left:-1.5rem;
+                        }
+                        &:after{
+                            right:-1.5rem;
+                        }
+                    }
+                    .design-title{
+                        width:12rem;
+                        
+                    }
+                    .dev-title{
+                        margin: 4rem auto 1rem;
+                        &:before{
+                            left:-3.5rem;
+                        }
+                        &:after{
+                            right:-3.5rem;
+                        }
+                    }
+                }
+                
+                
+                p{
+                    padding: 0 2rem;
+                    @include mq ($mq670){
+                        padding: 0 3rem;
+                    }
+                }
+                //design content
+                .design-wrapper{
+                    
+                    
+                    @include mq($mq1024){
+                        max-width:1200px;
+                        margin: 0 auto;
+                    }
+                    .project-first-img{
+                        width:100%;
+                        padding-bottom: 2rem;
+                        text-align: center;
+                        img{
+                            width:100%;
+                        }
+                        @include mq($mq670){
+                            padding-left:3rem;
+                            padding-right:3rem;
+                        }
+                    }
+                    .design-img-wrapper{
+                        .project-img{
+                            padding-bottom: 2rem; 
+                                text-align: center; 
+                        }
+                    }
+                   @include mq($mq600){
+                    .hl-second-img{
+                        .hl-img2{
+                            img{
+                                width:100%;
+                            }
+                        }
+                    }
+                    p{
+                        padding: 0 3rem;
+                    }
+                    .hl-third-img{
+                        img{
+                            width:100%;
+                        }
+                    }
+                   }
+                    
+                    @include mq($mq670){
+                        .hl-second-img{
+                            display: inline-grid;
+                            grid-template-columns: 45% 45%;
+                            grid-column-gap: 1rem;
+                            justify-content: center;
+                        }
+                        .hl-mq-grid{
+                            display:inline-grid;
+                            grid-template-columns: 1fr 1fr;
+                            grid-column-gap: 1rem; 
+                            grid-template-areas:
+                            "text1 img3"
+                            "text2 img3";
+                            padding-right: 3rem;
+                            align-items: center;
+                            p{
+                                &:first-of-type{
+                                    grid-area: text1;
+                                }
+                                &:nth-of-type(2){
+                                    grid-area: text2;
+                                    align-self: start;
+                                }
+                                
+                            }
+                            .hl-third-img{
+                                grid-area: img3;
+                                align-self: center;
+                            }
+                        }
+
+                    }
+                    p{
+                        margin-top: 0;
+                        margin-bottom:2rem;
+                        @include mq($mq1024){
+                            font-size: 1.3rem;
+                        }
+                    }
+                    .color-theme{
+                        padding: 0 2rem 2rem;
+                        h3{
+                            font-size:1.25rem;
+                            margin-top: 0;
+                            @include mq($mq1024){
+                                font-size:1.8rem;
+                            }
+                        }
+                        .color-wrapper {
+                            display: inline-flex;
+                            width: 100%;
+                            justify-content: space-between;
+
+                            .color{
+                                border-radius: 50%;
+                                border:1px solid #ccc;
+                            }
+                        }
+                        @include mq($mq600){
+                            padding: 0 3rem 2rem; 
+                        }
+                        @include mq($mq670){
+                            display:inline-flex;
+                            width:100%;
+                            padding: 3rem;
+                        
+                            h3,
+                            .color-wrapper{
+                                width:50%;
+                                max-width: 25rem;
+                            }
+                            .color-wrapper{
+                                .color{
+                                    width:50px !important;
+                                    height: 50px !important;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+               //dev content
+                .dev-wrapper{
+                   
+                    .dev-inner-wrapper{
+                    
+                        p{
+                            margin-top: 0;
+                            @include mq($mq1024){
+                                font-size:1.3rem;
+                            }
+                        }
+                        img{
+                            padding-bottom: 2rem;
+                            width:100%;
+                            text-align: center;
+
+                            @include mq($mq670){
+                                padding-left:3rem;
+                                padding-right:3rem;
+                            }
+                        }
+                        .dev-git{
+                            padding: 0 10px 1rem;
+                            @include mq($mq600){
+                                padding: 0 3rem 1rem;
+                            }
+                            .gist .blob-wrapper {
+                                max-height: 32rem;
+                                overflow: auto;
+                                table{
+                                 table-layout: fixed;
+                                    .blob-code{
+                                        white-space: normal;
+                                        transform: translateX(15px);
+                                    };
+                                }
+                            }  
+                        }
+                    }
+                    @include mq($mq1024){
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        
+                        .ln-dev1-mq {
+                            display: inline-grid;
+                            grid-template-columns: 1fr 1fr;
+                        }
+                    }
+                }
+                
+             }
+         }
+        .page-nav{
+            display:none;
+            @include mq($mq600){
+                display:block;
+                a{
+                    display: block;
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color:$color__background-body;
+                    text-decoration: none;
+                }
+                .prev-nav {
+                    display:block;
+                    position: fixed;
+                    top: 50%;
+                    left:-4.2rem;
+                    transform: rotate(90deg);
+                    z-index: 1;
+                    &:after{
+                        content: "";
+                        width: 5px;
+                        height: 5px;
+                        border-right: 2px solid $color__background-body;
+                        padding-right: 45%;
+                    }
+                    
+                }
+                .next-nav{
+                    display:block;
+                    position: fixed;
+                    top: 50%;
+                    right: -4.2rem;
+                    transform: rotate(90deg);
+                    z-index: 1;
+                    &:before{
+                        content: "";
+                        width: 5px;
+                        height: 5px;
+                        border-right: 2px solid $color__background-body;
+                        padding-right: 45%;
+                    }
+                    
+                }
+                .page-nav-link.menu_black{
+                    a{
+                    color: $color__bodyfont;
+                    }
+                    &:before,
+                    &:after{
+                        border-color:$color__bodyfont;
+                    }
+                }
+                .page-nav-link.menu_white{
+                    color: inherit;
+                    
+                }
+            }
+        }
+        
+     }
+       
+    .post-navigation{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem 0;
+        @include mq($mq670){
+            padding:2rem;
+        }
+        @include mq($mq1024){
+            padding:2rem 0;
+        }
+        .nav-links{
+            padding: 0 1rem;
+            a {
+                display: inline-flex;
+                flex-direction: column;
+                text-decoration: none;
+                border-bottom: 1px solid $color__bodyfont;
+                line-height: 1.2;
+                #{$link-hover-selector}{
+                    cursor: pointer;
+                    border-bottom: 2px solid $color__bodyfont;
+                    font-weight: 550;
+                }
+                span.nav-subtitle{
+                    font-size:0.75rem;
+                    @include mq($mq670){
+                        font-size:0.85rem;
+                    }
+                    @include mq($mq1024){
+                        font-size:1rem;
+                    }
+                }
+            }
+            @include mq($mq670){
+                font-size:1.5rem;
+            }
+        }
+    }
+
+    .site-footer{
+        background-color: $color__bodyfont;
+        color:$color__background-body;
+
+        .sns-wrapper {
+            position: relative;
+            bottom:0;
+            padding-bottom: 1rem;
+          
+            .menu-social-menu-container{
+                    text-align: center;
+                    ul#menu-social-menu-1{
+                    max-width: 12.8rem;
+                    display: inline-flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    padding-top: 1.5rem;
+                    li.menu-item{
+                        svg{
+                            fill:$color__background-body;
+                            #{$link-hover-selector}{
+                                fill: $color__pink;
+                             }
+                        }
+                        &:last-of-type{
+                        a{
+                                color:inherit;
+                                font-size: inherit;
+                                text-decoration: none;
+                                display: inline-flex;
+                                align-items: center;
+                                font-weight: 600;
+                                svg{
+                                    margin-right:0.5rem;
+
+                                   
+                                }
+                                #{$link-hover-selector}{
+                                    color: $color__pink;
+                                    svg{
+                                        fill: $color__pink;
+                                    }
+                                 }
+                            }
+                            }
+                    } 
+                    @include mq($mq670){
+                        flex-wrap: inherit;
+                        justify-content: space-between;
+                        min-width: 22rem;
+                        
+                    }
+                    @include mq($mq1400){
+                        min-width: 1200px;
+                        li.menu-item-17{
+                            width:5%;
+                            text-align: left;
+                        }
+                        li.menu-item-18{
+                            width:5%;
+                            text-align: left;
+                        }
+                        li.menu-item-19{
+                            width:90%;
+                            text-align: right;
+                        }
+                    }
+                } 
+            }
+            }
+        .site-info{
+            position: inherit;
+            transform: inherit;
+            a{
+                color:$color__background-body;
+            }
+        }
+    }
+    }
+}

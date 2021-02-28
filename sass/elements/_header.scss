@@ -1,0 +1,273 @@
+.site-header{
+    padding-top: 10px;
+    @include mq($mq600){
+        padding-top: 20px;
+    }
+    @include mq($mq1024){
+        max-width: 1200px;
+        margin:0 auto;
+    }
+     .header-wrapper{
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: repeat(3,33.33%);
+    grid-template-areas: "logo project .";
+    align-items: center;
+        .site-branding{
+            grid-area:logo;
+            z-index: 3;
+            padding-left: 10px;
+            h1{
+                max-width: 2.8rem;
+                max-height: 2.8rem;
+                margin: 0.5rem;
+
+                @include mq($mq600){
+                    max-width: 3.5rem;
+                    max-height:3.5rem; 
+                }
+
+                @include mq($mq1024){
+                max-width: 4rem;
+                max-height:4rem; 
+                }
+            }
+        }
+        .main-navigation{
+            p{
+                display:none;
+            }
+            .menu-wrapper{
+                z-index: 3;
+                @include mq($mq600){   
+                        display: inline-flex;
+                        align-items: center;
+                        position: absolute;
+                        left: 47%;
+                        top: 2rem;
+                }
+            }
+            .menu-toggle{
+                position: absolute;
+                top: 1rem;
+                right: 1rem;       
+                height: 47px;
+                background: transparent;
+                border: none;
+                cursor: pointer;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+                font-size:0;
+
+
+                &:focus{
+                    outline: none;
+                }
+                &:hover{
+                    transition: all 0.2s ease-in-out;
+                    .line{
+                    &:nth-child(1){
+                        width: 100%;
+                    }
+                    &:nth-child(2){
+                        width: 100%;
+                    }
+                    &:nth-child(3){
+                        width: 100%;
+                    } 
+                    }
+                }
+                &.active{
+                    .line{
+                    transition: all 0.2s ease-in-out;
+                    &:nth-child(1){
+                        width: 100%;
+                        transform: translateY(250%) rotate(45deg);
+                    }
+                    &:nth-child(2){
+                        opacity: 0;
+                        width: 100%;
+                    }
+                    &:nth-child(3){
+                        width: 100%;
+                        transform: translateY(-250%) rotate(-45deg);
+                    }    
+                    }
+                }
+                .hm-menu{
+                 
+                    .hm-wrapper{
+                        width: 2.5rem;
+                        display:inline-flex;
+                        align-items: flex-end;
+                        
+                        .line{
+                            transition: all 0.2s ease-in-out;
+                            margin-right: 0.45rem;
+                            height: 32px;
+                            width: 4px;
+                            border-radius: 5px;
+                            background-color:$color__bodyfont;
+                            -webkit-animation: blink 4s infinite; 
+                                animation: blink 4s infinite;
+                            &:nth-child(1){
+                                height: 20px;
+                            }
+                            &:nth-child(2){
+                                height: 27px;
+                            }
+                           
+                        }
+                        .delay1 {
+                            -webkit-animation-delay: 0.5s; 
+                            animation-delay: 0.5s;
+                        }
+                        .delay2 {
+                            -webkit-animation-delay: 0.8s; 
+                            animation-delay: 0.8s;
+                        }
+                     
+                        @-webkit-keyframes slide {
+                            0% { color:$color__bodyfont; }
+                            20%	{ color:transparent; }
+                            30%	{ color:transparent; }
+                            100% { color:$color__bodyfont; }	
+                        }
+                        @keyframes slide {
+                        0% { color:$color__bodyfont; }
+                        20%	{ color:transparent; }
+                        30%	{ color:transparent; }
+                        100% { color:$color__bodyfont; }	
+                        }
+                    }
+                    @include mq($mq600){
+                        display:inline-flex;
+                        max-width: 100px;
+                        align-items: center;
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-weight: 600;
+                    }
+                }
+             
+                @include mq($mq600){
+                    p{
+                        display:block;
+                    }
+                }
+                @include mq($mq600){
+                    position: initial;
+                }
+            }
+            .toggled-nav-wrapper{
+                .menu-menu-1-container{
+                    ul#primary-menu{
+                        li#menu-item-185{
+                            display:none;
+                        }
+                    }
+                }
+            }
+            @media screen and (max-width: 736px) and (max-height: 414px){ 
+                min-height: 200vh;
+            }
+            @media screen and (max-width: 812px) and (max-height: 375px) { 
+                min-height: 200vh;
+           }
+        }
+        a.project-link{
+            grid-area:project;
+            z-index: 3;
+            .project-icon{   
+                margin-top: 1rem;
+                text-align: center;
+                padding-left: 0.625rem;
+                .p-icon{
+                    max-width: 2.5rem;
+                    filter: invert(10%) sepia(9%) saturate(1561%) hue-rotate(181deg) brightness(99%) contrast(83%);
+                }
+                p{
+                    display: none;
+                }
+
+                @include mq ($mq600){
+                    display:inline-flex;
+                    align-items: center;
+                    min-width: 10rem;
+                    margin-top:0;
+                    .p-icon{
+                        max-width: 3rem;
+                    }
+                    p{
+                        display:block;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-weight: 600;
+                        padding-left:0.2rem;
+                    }
+                }
+
+            }
+            @include mq($mq600){
+                justify-self: end;
+                text-decoration: none;
+                padding-right: 10px;
+            }
+        }
+        .main-navigation.toggled{
+            .menu-wrapper{
+                .menu-toggle{
+                    .line{
+                        background-color: $color__background-body;
+                        -webkit-animation: none; 
+                                animation: none;
+                        &:nth-child(1){
+                            width: 40%;
+                            transform: translate(0.9rem, 10%) rotate(45deg);
+                            height: 40px;
+                        }
+                        &:nth-child(2){
+                            opacity: 0;
+                            width: 100%;
+                        }
+                        &:last-of-type{
+                            width: 40%;
+                            transform: translate(-0.9rem, 10%) rotate(-45deg);
+                            height: 40px;
+                        }
+                    }
+                    @include mq($mq600){
+                        color:$color__background-body;
+                        .line{
+                            &:nth-child(1){
+                                transform: translate(0.9rem, 0%) rotate(45deg);  
+                            }
+                            &:last-of-type{
+                                transform: translate(-0.9rem, 0%) rotate(-45deg); 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+          
+        @include mq($mq600){
+            grid-template-areas: "logo . project";
+            padding: 0 0.5rem;
+            .main-navigation.toggled{
+                height: 100%;
+                @include gradient(180deg, $grad-navy);
+                .menu-toggle{
+                    .line{
+                        background: $color__background-body;
+                    }
+                }
+            }
+        }
+    }
+    
+}

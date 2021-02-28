@@ -1,0 +1,29 @@
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
+
+
+// Function to
+// Convert Px to Ems
+@function em($px, $bc: 16){
+    @return #{$px/$bc}em; 
+}
+
+// Media Query Breakpoints
+$mq1920:em(1920);//$desktoplarge
+$mq1600:em(1600);//$desktopsmall
+$mq1400:em(1400); //$desktopmini
+$mq1300:em(1300); //bp for arrow on front
+$mq1100:em(1100); //bp for h1 title
+$mq1024:em(1024);//$tabletLandscape
+$mq980: em(980);//$tabletPortraitLarge
+$mq900: em(900); //Bp for flipcard
+$mq850: em(850); //$tabletPortrait
+$mq800: em(800); //Bp for flipcard
+$mq768: em(768);//Bp for ipad
+$mq700: em(700); //$tabletPortrait
+$mq670: em(670);//$phoneLandscape
+$mq615: em(615); //$phoneLandscapeSmall
+$mq600: em(600); //mq for WP default nav 
+$mq568: em(568); //$phoneLandscapeSmall
+$mq500: em(500); //$phonePortraitLarge
+$mq350: em(350); //$phonePortraitsmall

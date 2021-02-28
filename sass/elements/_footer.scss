@@ -1,0 +1,82 @@
+.go-top{
+    text-align: center;
+    .go-top-wrapper{
+        display:inline-grid;
+        grid-template-rows: 25px 1fr;
+        grid-template-areas: 
+        "title"
+        "line";
+        justify-items: center;
+        a{
+            text-decoration: none;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font-weight: 600;
+            grid-area:title;
+        }
+        &:after{
+            content: "";
+            width: 5px;
+            height: 1rem;
+            border-right: 2px solid #282C34;
+            grid-area:line;
+        }
+    }
+}
+footer{
+   
+    bottom: 0;
+    width:100%;
+    .sns-wrapper{
+        position: fixed;
+        bottom: 1.2rem;
+        left: 0;
+        z-index: 1;
+        @media (orientation: landscape) {
+            bottom: 0;
+         }
+         @media (min-width: 900px) and (orientation: landscape) {
+            bottom: 1.5rem;
+         }
+        .menu-social-menu-container{
+            ul#menu-social-menu-1{
+                list-style:none;
+                margin: 0;
+                padding-left: 0.5em;
+                max-width: 40px;
+                li{
+                    a{
+                        img{
+                            #{$link-hover-selector}{
+                                cursor: pointer;
+                                filter: invert(50%) sepia(50%) saturate(4901%) hue-rotate(329deg) brightness(104%) contrast(95%);
+
+                            }
+                        }
+                        
+                    }
+                    &:last-of-type{
+                        a{
+                          font-size: 0;
+                        }
+                    }
+                  
+                }
+               
+            }
+        }
+    }
+    .site-info {
+        width: 100%;
+        text-align: center;
+        font-weight: 300;
+        padding: 0.5rem 0;
+     
+        a{
+            text-decoration: none;
+        }
+    }
+}
+.entry-footer {
+    display: none;
+}

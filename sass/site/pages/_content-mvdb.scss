@@ -1,0 +1,91 @@
+#post-66{
+    .entry-header{
+        .header-wrap{
+            .header-top-image{
+                background-position: 75% center;
+                @include mq($mq670){
+                    background-position: center center;
+                }
+            }
+        }
+    }
+    .entry-content{
+        .design-wrapper{
+            @include mq($mq600){
+                .md-second-img.aos-init.aos-animate {
+                    text-align: center;
+                    img{
+                        width:100%;
+                    }
+                }
+                .md-third-img{
+                    .d-img3 {
+                        padding: 0 3rem;
+                        @include mq($mq670){
+                            padding:0;
+                        }
+                    }  
+                }
+            }
+            @include mq($mq670){
+                .design-img-wrapper.md-third-img {
+                    padding: 0 3rem;
+                    display: inline-flex;
+                    align-items: center;
+                    p,.d-img3{
+                        width:50%;
+                    }
+                }
+                div{
+                    &:nth-of-type(4){
+                        flex-direction: row-reverse;
+                    }
+                }
+            }
+                
+        }
+        
+        .dev-wrapper{
+            padding-top: 2rem;
+            .dev-inner-wrapper{
+                padding-bottom: 2rem;
+                p{
+                    @include mq($mq600){
+                        padding: 0 3rem;
+                    }  
+                }
+            }
+            .dev-movie{
+                @include mq($mq600){
+                    padding: 0 3rem;
+                }
+                @include mq($mq670){
+                    padding: 0 6rem;
+                }
+            }
+            @include mq($mq1024){
+                width: 84.157%;
+                margin: 0 auto;
+                padding-top:2rem;
+                .dev-inner-wrapper {
+                    display: inline-grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+
+                    .dev-movie{
+                        padding:0;
+                    }
+                }
+                .md-dev2{
+                    p{
+                        order:2;
+                    }
+                    .dev-movie{
+                        order:1;
+                    } 
+                }
+                
+            }
+        }
+    }
+}

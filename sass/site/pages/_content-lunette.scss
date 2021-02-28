@@ -1,0 +1,54 @@
+#post-59{
+    .entry-content{
+        .design-wrapper{
+            .design-img-wrapper.hl-second-img.ln-second-img{
+                @include mq($mq600){
+                    .d-img2{
+                        padding: 0 3rem;
+                        @include mq($mq670){
+                            padding: 0;
+                        }
+                    }
+                }
+                @include mq($mq670){
+                    padding: 0 1rem; 
+                }
+            }
+            @include mq($mq670){
+                .design-img-wrapper.ln-fifth-img {
+                    text-align: center;
+                }
+            }
+            .color-theme{
+                .color-wrapper{
+                    .color{
+                        &:nth-of-type(4){
+                            @include gradient(180deg, $ln-list1);
+                        }
+                        &:nth-of-type(5){
+                            @include gradient(180deg, $ln-list2);
+                        }
+                    }
+                }
+            }
+        }
+        .dev-wrapper{
+            .ln-dev1,
+            .dev2{
+                h3{
+                    padding: 0 2rem;
+                    @include mq($mq670){
+                        padding: 0 3rem;  
+                    }
+                }
+                .dev-movie{
+                    @include mq($mq600){
+                        padding: 0 3rem;
+                    }
+                }
+            }
+            
+
+        }
+    }
+}

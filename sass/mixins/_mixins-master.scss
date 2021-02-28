@@ -1,0 +1,61 @@
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+//Mixin for gradient color
+@mixin gradient($direction, $list) { 
+    background: -webkit-linear-gradient($direction, $list);
+    background: -moz-linear-gradient($direction, $list);
+    background: -o-linear-gradient($direction, $list);
+    background: linear-gradient($direction, $list);  
+}
+
+//Mixin for text color
+@mixin grd-text-pink($direction, $list){
+    color:white;
+    background: linear-gradient($direction, $list);
+    background-clip: text;
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+@mixin gradient-fill($direction, $list) { 
+    fill: -webkit-linear-gradient($direction, $list);
+    fill: -moz-linear-gradient($direction, $list);
+    fill: -o-linear-gradient($direction, $list);
+    fill: linear-gradient($direction, $list);  
+}
+/*
+ * Button Styles Mixins
+ */
+// Set up Basic button styles
+@mixin btn-style() {
+	display: inline-block;
+	width: 100%;
+	max-width: 115px;
+	background-color: $color__navy;
+    text-align: center;
+	line-height: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: $color__background-body;
+	// letter-spacing: 0.1em;
+    // font-size: 0.9em;
+  
+}
+
+// Media Query Mixin
+@mixin mq($w) {
+    @media (min-width: $w){
+        @content
+    }
+}
+

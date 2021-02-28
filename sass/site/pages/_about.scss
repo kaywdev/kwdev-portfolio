@@ -1,0 +1,340 @@
+.page-id-9{
+    @include gradient(180deg, $grad-navy);
+    color: $color__background-body;
+    .site{
+        min-height: 100vh;
+     
+        .site-header{
+            .header-wrapper{
+                .main-navigation{
+                    .menu-wrapper{
+                        .menu-toggle{
+                            color:$color__background-body;
+                            .line{
+                                background:$color__background-body;
+                            }
+                        }
+                    }
+                    .toggled-nav-wrapper{
+                        .menu-menu-1-container{
+                            ul#primary-menu{
+                                a{
+                                    color:$color__background-body;
+                                }
+                                li#menu-item-225,
+                                li#menu-item-233{                                  
+                                    @include mq($mq600){
+                                        display:block;
+                                        position: fixed;
+                                        top:50%;
+                                        left: -1rem;
+                                        transform: rotate(90deg);
+                                        z-index:1;	
+                                        &:after{
+                                            content:"";
+                                            width: 5px;
+                                            height: 5px;
+                                            border-right: 2px solid $color__background-body;
+                                            padding-right: 45%;
+                                        }
+                                       
+                                    }
+                                } 
+                                li#menu-item-15{
+                                    display:none;
+                                } 
+                                li#menu-item-191{
+                                    &:before{
+                                    border-right: 2px solid $color__background-body;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                a.project-link{
+                   .project-icon{
+                       .p-icon{
+                        filter: invert(94%) sepia(10%) saturate(512%) hue-rotate(326deg) brightness(110%) contrast(94%);
+                       }
+                       p{
+                           color:$color__background-body;
+                       }
+                   } 
+                } 
+                .main-navigation.toggled{
+                    background:$color__background-body;
+                    .menu-wrapper{
+                        .menu-toggle{
+                            color:$color__bodyfont;
+                            .line{
+                                background: $color__bodyfont;
+                            }
+                        }   
+                    }
+                    .toggled-nav-wrapper{
+                        div.menu-menu-1-container{
+                            #primary-menu{
+                                 a{
+                                    color:$color__bodyfont;
+                                
+                                }
+                                li#menu-item-225,
+                                li#menu-item-233{
+                                    display:none;
+                                }
+                                li#menu-item-15{
+                                    display:block;
+                                    &:after{
+                                        border-right: 2px solid $color__background-body;
+                                    }
+                                } 
+                            } 
+                        } 
+                        .sns-wrapper{
+                            .menu-social-menu-container{
+                               #menu-social-menu{
+                                    a{
+                                        color:$color__bodyfont;
+
+                                        svg{
+                                            fill:$color__bodyfont;
+
+                                            #{$link-hover-selector}{
+                                                fill: $color__pink;
+                                             }
+                                        }
+                                    }
+                                    &:last-of-type{
+                                        a{
+                                          font-size: inherit;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .site-main{
+            @include mq($mq1024){
+                min-height: 41rem;
+                position: relative;
+            }
+             /* ----------- iPad Pro ----------- */
+            /* Portrait */
+            @media only screen 
+            and (min-width: 1024px) 
+            and (max-height: 1366px) 
+            and (orientation: portrait) 
+            and (-webkit-min-device-pixel-ratio: 1.5) {
+                min-height: 72rem;
+            }
+           #post-9{
+            padding:1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+
+            @include mq($mq600){
+                padding: 2rem 3.5rem;
+            }
+            @include mq($mq1024){
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%, -50%);
+            }
+            /* ----------- iPad Pro ----------- */
+            /* Portrait */
+            @media only screen 
+            and (min-width: 1024px) 
+            and (max-height: 1366px) 
+            and (orientation: portrait) 
+            and (-webkit-min-device-pixel-ratio: 1.5) {
+                padding: 2rem 4.5rem;
+            }
+            @include mq($mq1400){
+                padding:0;
+            }
+            .entry-header{
+                h1{
+                    font-size: 3.5rem;
+                    color:$color__pink;
+                    line-height: 1;
+                    @include mq ($mq980){
+                        margin:0;
+                    }
+                }
+            }
+            .entry-content{
+                @include mq($mq980){
+                   max-width: 1200px;
+                   margin:0 auto; 
+                }
+                .about-wrapper{
+                    @include mq($mq980){
+                      display:inline-grid;
+                      grid-template-areas: "text skills img";
+                      grid-gap: 1%;
+                      grid-template-columns: 58% 20% 20%;
+                      .about-img{
+                          grid-area:img;
+                          padding-top: 0.7rem;
+                      }
+                      .about-text{
+                          grid-area:text;
+                              p{
+                                  margin-bottom: 0;
+                              }
+                      } 
+                    }
+                    /* ----------- iPad Pro ----------- */
+                    /* Portrait */
+                    @media only screen 
+                    and (min-width: 1024px)  
+                    and (orientation: portrait) 
+                    and (-webkit-min-device-pixel-ratio: 1.5) {
+                        grid-template-areas:
+                        "img"
+                        "text"
+                        "skills";
+                        grid-template-columns: auto;
+                    }
+                   
+                    .about-img{
+                        text-align: center;
+                        padding-bottom: 1rem;
+                    }
+                    .skills{
+                        width: 100%;
+                        display: inline-grid;
+                        grid-template-columns: 1fr 1fr;
+                        padding-bottom: 2rem;
+
+                        @include mq($mq980){
+                            grid-area:skills;
+                            grid-template-columns: none !important;
+                            grid-template-rows: 1fr 1fr;
+                            padding-left:1rem;
+                        }
+
+                        /* ----------- iPad Pro ----------- */
+                        /* Portrait */
+                        @media only screen 
+                        and (min-width: 1024px) 
+                        and (orientation: portrait) 
+                        and (-webkit-min-device-pixel-ratio: 1.5) {
+                            grid-template-columns:1fr 1fr !important;
+                            grid-template-rows: auto;
+                        }
+                      .tech-tools,
+                      .design-tools{
+                        h3{
+                            display: inline-flex;
+                            align-items: center;
+                            font-size: 1.19rem;
+                            margin-bottom: 0.5rem;
+                            text-transform: uppercase;
+                            color:$color__pink;
+                            img#t-icon,
+                            img#d-icon {
+                                padding-right:0.2rem;
+                                margin-top: -5px;
+                                filter: invert(73%) sepia(52%) saturate(3397%) hue-rotate(309deg) brightness(97%) contrast(101%);
+                            }  
+                        }
+                        ul {
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                        }
+                      }
+                     
+                    }
+                }
+            }
+           } 
+        }
+        .site-footer{
+            position: inherit;
+            @media only screen 
+            and (min-width: 1024px) 
+            and (min-height: 900px)
+            and (orientation: landscape) 
+            and (-webkit-min-device-pixel-ratio: 1.5) {
+                position: absolute;
+            }
+            .sns-wrapper {
+                position: relative;
+                bottom:inherit;
+
+                @include mq($mq568){
+                    padding-bottom: 1rem;
+                }
+               
+                .menu-social-menu-container{
+                    text-align: center;
+                    ul#menu-social-menu-1{
+                        max-width: 12.8rem;
+                        display: inline-flex;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+                       li.menu-item{
+                            a{
+                           svg{
+                               fill:$color__background-body;
+                               #{$link-hover-selector}{
+                                fill: $color__pink;
+                               }
+                             }
+                            }
+                            #{$link-hover-selector}{
+                                cursor: pointer;
+                            }
+                           &:last-of-type{
+                               a{
+                                   color:inherit;
+                                   font-size: inherit;
+                                   text-decoration: none;
+                                   display: inline-flex;
+                                   align-items: center;
+                                   font-weight: 600;
+                                   svg{
+                                       margin-right:0.5rem;
+                                   }
+                                   #{$link-hover-selector}{
+                                        color: $color__pink;
+                                        svg{
+                                            fill: $color__pink;
+                                        }
+                                    }
+                               }
+                           }
+                       } 
+                       @include mq($mq568){
+                            flex-wrap: inherit;
+                            justify-content: space-between;
+                            min-width: 22rem;
+                            li.menu-item{
+                                line-height: 1;
+                                a{
+                                    font-size:1.2rem;
+                                }  
+                            }
+                        }
+                        
+                    } 
+                }
+            }
+            .site-info{
+                a{
+                    color:$color__background-body;
+                }
+            }
+            
+        }
+    }
+}
