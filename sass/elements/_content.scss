@@ -32,3 +32,12 @@
 .teammate-link a{
     color:$color__background-body !important;
 }
+
+.dev-section{
+    padding:0 2rem;
+    .dev-text-wrapper{
+        p{
+        padding:0!important;
+        }
+    }
+}
