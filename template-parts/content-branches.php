@@ -137,7 +137,7 @@
 		?>
 		<div class="dev-wrapper">
 			<div class ="dev-text-wrapper" data-aos="fade-up"><?php if($dev_text_1): echo $dev_text_1; endif; ?></div>
-			<div class="dev-section dev-1">	
+			<div class="dev-section dev1">	
 				<div class="dev-text-wrapper" data-aos="fade-up"><?php if($dev_text_2): echo $dev_text_2; endif; ?></div>
 				<div class="dev-inner-wrapper">	
 					<div class="dev-movie">
@@ -151,10 +151,10 @@
 				</div><!-- .dev-inner-wrapper -->
 			</div><!-- .dev-section1 -->
 			
-			<div class="dev-section dev-2">
+			<div class="dev-section dev2">
 			<div class ="dev-text-wrapper" data-aos="fade-up"><?php if($dev_text_3): echo $dev_text_3; endif; ?></div>
 				<div class="dev-inner-wrapper">
-					<div class="dev-sec2-container">
+					<div class="dev-sec2-container col-2-fr">
 					<div class ="dev-text-wrapper" data-aos="fade-up"><?php if($dev_text_4): echo $dev_text_4; endif; ?></div>
 					<div class="dev-img-wrapper"><?php if($dev_image_id_1): echo wp_get_attachment_image($dev_image_id_1, 'large', '', array('class'=>'dev-img'));endif; ?></div>
 					</div><!-- .dev-sec2-container -->
@@ -168,7 +168,7 @@
 					</div><!-- .dev-git.ln-dev1-git -->
 				</div><!-- .dev-inner-wrapper -->
 			</div><!-- .dev-section2 -->
-			<div class="dev-section dev-3">	
+			<div class="dev-section dev3">	
 				<div class="dev-text-wrapper" data-aos="fade-up"><?php if($dev_text_5): echo $dev_text_5; endif; ?></div>
 				<div class="dev-inner-wrapper">	
 					<div class="dev-movie">

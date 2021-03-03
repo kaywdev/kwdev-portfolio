@@ -163,24 +163,26 @@
 				endif;
 		?>
 		<div class="dev-wrapper">
-			
-			<div class="dev-inner-wrapper dev-col2 md-dev1" data-aos="fade-up">
-				<div class="dev-text-wrapper"><?php if($dev_text_1): echo $dev_text_1; endif; ?></div>
-				<div class="dev-movie">
-					<video width="100%" height="100%" controls preload="metadata">
-					<source src="<?php echo get_template_directory_uri(); ?>/media/mvdb/mvdb-movie1.mov#t=0.1" type="video/mp4" alt="lunette code demo movie">
-					</video>
-				</div><!-- .dev-movie -->
-			</div><!-- .tg-dev1 -->
-			<div class="dev-inner-wrapper dev-col2 md-dev2" data-aos="fade-up">
-				<div class="dev-text-wrapper"><?php if($dev_text_2): echo $dev_text_2; endif; ?></div>
-				<div class="dev-movie">
-					<video width="100%" height="100%" controls preload="metadata">
-					<source src="<?php echo get_template_directory_uri(); ?>/media/mvdb/mvdb-movie2.mov#t=0.1" type="video/mp4" alt="lunette code demo movie">
-				    </video>	
-				</div><!-- .dev-movie -->
-			</div><!-- .ln-dev2 -->
-
+			<div class="dev-section dev1">	
+				<div class="dev-inner-wrapper dev-col2 md-dev1" data-aos="fade-up">
+					<div class="dev-text-wrapper"><?php if($dev_text_1): echo $dev_text_1; endif; ?></div>
+					<div class="dev-movie">
+						<video width="100%" height="100%" controls preload="metadata">
+						<source src="<?php echo get_template_directory_uri(); ?>/media/mvdb/mvdb-movie1.mov#t=0.1" type="video/mp4" alt="lunette code demo movie">
+						</video>
+					</div><!-- .dev-movie -->
+				</div><!-- .dev-inner-wrapper -->
+			</div><!-- .dev-section -->
+			<div class="dev-section dev2">
+				<div class="dev-inner-wrapper dev-col2 md-dev2" data-aos="fade-up">
+					<div class="dev-text-wrapper"><?php if($dev_text_2): echo $dev_text_2; endif; ?></div>
+					<div class="dev-movie">
+						<video width="100%" height="100%" controls preload="metadata">
+						<source src="<?php echo get_template_directory_uri(); ?>/media/mvdb/mvdb-movie2.mov#t=0.1" type="video/mp4" alt="lunette code demo movie">
+						</video>	
+					</div><!-- .dev-movie -->
+				</div><!-- .dev-inner-wrapper -->
+			</div><!-- .dev-section -->
 		</div><!-- .dev-wrapper -->
 		
 		<?php

@@ -168,7 +168,7 @@
 			<div class="dev-text-wrapper" data-aos="fade-up"><?php if($dev_text_1): echo $dev_text_1; endif; ?></div>
 			<div class="dev-img-wrap" data-aos="fade-up"><?php if($dev_image_id_1): echo wp_get_attachment_image($dev_image_id_1, 'large', '', array('class'=>'dev-img'));endif; ?>
 			</div><!-- ..dev-img-wrap -->
-			<div class="dev-content ws-dev1">	
+			<div class="dev-section ws-dev1">	
 			<div class="dev-inner-wrapper">	
 				<h3>Language Switcher Custermization</h3>
 				<div class="dev-git ln-dev1-git"  data-aos="fade-up">

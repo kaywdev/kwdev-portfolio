@@ -155,7 +155,7 @@
 				endif;
 		?>
 		<div class="dev-wrapper">
-			<div class="dev-content dev1">
+			<div class="dev-section dev1">
 				<div class="dev-inner-wrapper">
 					<div class="dev-text-wrapper" data-aos="fade-up"><?php if($dev_text_1): echo $dev_text_1; endif; ?></div>
 					<div class="dev-img-wrap" data-aos="fade-up"><?php if($dev_image_id_1): echo wp_get_attachment_image($dev_image_id_1, 'large', '', array('class'=>'dev-img'));endif; ?>
@@ -168,7 +168,7 @@
 				
 				</div><!-- .dev-inner-wrapper -->
 			</div><!-- .dev-content.dev1 -->
-			<div class="dev-content dev2">
+			<div class="dev-section dev2">
 				<div class="dev-inner-wrapper">
 					<div class="dev-text-wrapper" data-aos="fade-up"><?php if($dev_text_2): echo $dev_text_2; endif; ?></div>
 					<div class="dev-img-wrap" data-aos="fade-up"><?php if($dev_image_id_3): echo wp_get_attachment_image($dev_image_id_3, 'large', '', array('class'=>'dev-img'));endif; ?>

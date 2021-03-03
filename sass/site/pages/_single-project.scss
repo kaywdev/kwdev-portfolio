@@ -329,6 +329,10 @@
                             padding-left:3rem;
                             padding-right:3rem;
                         }
+                        @include mq($mq1024){
+                            padding-left:7rem;
+                            padding-right:7rem;
+                        }
                     }
                     .design-img-wrapper{
                         .project-img{

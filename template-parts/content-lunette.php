@@ -160,7 +160,7 @@
 		?>
 		<div class="dev-wrapper">
 			<div class ="dev-text-wrapper" data-aos="fade-up"><?php if($dev_text_1): echo $dev_text_1; endif; ?></div>
-			<div class="dev-content ln-dev1">	
+			<div class="dev-section ln-dev1">	
 				<div class="dev-inner-wrapper">	
 					<h3>Comparison Image Slider</h3>
 					<div class="dev-git ln-dev1-git"  data-aos="fade-up">
@@ -174,7 +174,7 @@
 				</div><!-- .dev-inner-wrapper -->
 			</div><!-- .ln-dev1 -->
 			
-			<div class="dev-content dev2">
+			<div class="dev-section dev2">
 				<div class="dev-inner-wrapper">
 					<h3>Image rotation & Product Color Change</h3>
 					<div class="dev-movie">

@@ -152,18 +152,20 @@
 				endif;
 		?>
 	<div class="dev-wrapper">
-			<div class="dev-movie">
-				<video width="100%" height="100%" controls preload autoplay loop>
-                <source src="<?php echo get_template_directory_uri(); ?>/media/terminator/tg-play.mov#t=0.1" type="video/mp4" alt="terminator game play movie">
-              	</video>
-			</div><!-- .dev-movie -->
-			<div class="dev-content dev1">
+			<div class="dev-section dev1">
+				<div class="dev-movie">
+					<video width="100%" height="100%" controls preload autoplay loop>
+					<source src="<?php echo get_template_directory_uri(); ?>/media/terminator/tg-play.mov#t=0.1" type="video/mp4" alt="terminator game play movie">
+					</video>
+				</div><!-- .dev-movie -->
 				<div class="dev-inner-wrapper">
-				<div class="dev-text-wrapper" data-aos="fade-up"><?php if($dev_text_1): echo $dev_text_1; endif; ?></div>
-				<div class="dev-git ln-dev1-git"  data-aos="fade-up">
-				<script src="https://gist.github.com/kaywdev/d0b812528c82da909eb3bafd485057bd.js"></script>
-				</div><!-- .dev-git.ln-dev1-git -->
-				<div class="dev-content dev2">
+					<div class="dev-text-wrapper" data-aos="fade-up"><?php if($dev_text_1): echo $dev_text_1; endif; ?></div>
+					<div class="dev-git ln-dev1-git"  data-aos="fade-up">
+					<script src="https://gist.github.com/kaywdev/d0b812528c82da909eb3bafd485057bd.js"></script>
+					</div><!-- .dev-git.ln-dev1-git -->
+				</div><!-- .dev-inner-wrapper -->
+			</div><!-- .dev-content.dev1 -->
+				<div class="dev-section dev2">
 				<div class="dev-inner-wrapper">
 					<div class="dev-text-wrapper" data-aos="fade-up"><?php if($dev_text_2): echo $dev_text_2; endif; ?></div>
 					<div class="dev-img-wrap" data-aos="fade-up"><?php if($dev_image_id_3): echo wp_get_attachment_image($dev_image_id_3, 'large', '', array('class'=>'dev-img'));endif; ?>
@@ -173,8 +175,8 @@
 					</div><!-- .dev-git.hl-dev2-git -->
 				</div><!-- .dev-inner-wrapper -->
 			</div><!-- .dev-content.dev2 -->
-				</div><!-- .dev-inner-wrapper -->
-			</div><!-- .dev-content.dev1 -->
+				
+		
 	</div><!-- .dev-wrapper -->
 		
 		<?php

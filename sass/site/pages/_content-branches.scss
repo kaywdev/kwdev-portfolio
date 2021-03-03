@@ -1,0 +1,29 @@
+.post-275{
+    .dev-wrapper{  
+        @include mq($mq600){
+            ul{
+                margin-left: 1.8rem!important;
+                padding-right:3rem!important;
+                display:inline-grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap:4%;
+            }
+        }
+        .dev2{
+            .dev-sec2-container{
+                grid-column-gap:initial;
+            }
+        }
+        .dev-movie{
+            padding-bottom:2rem;
+            @include mq($mq768){
+                padding-left:2rem;
+                padding-right:2rem;  
+            }
+            @include mq($mq1024){
+                padding-left:5rem;
+                padding-right:5rem;
+            }
+        }
+    }
+}
